@@ -25,12 +25,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => 'ae299e17d8f2566dc0482fe711e441902904c111',
+    'reference' => 'a1cbf309bf8a369c413e41140ef1f77faed3833e',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -428,6 +428,15 @@ private static $installed = array (
         0 => 'v8.83.13',
       ),
     ),
+    'kkszymanowski/traitor' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c16d90149e807d71562953eb5c9279e75170b63f',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -455,12 +464,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => 'ae299e17d8f2566dc0482fe711e441902904c111',
+      'reference' => 'a1cbf309bf8a369c413e41140ef1f77faed3833e',
     ),
     'laravel/sail' => 
     array (
@@ -867,6 +876,15 @@ private static $installed = array (
       array (
         0 => '4.2.3',
       ),
+    ),
+    'santigarcor/laratrust' => 
+    array (
+      'pretty_version' => '7.1.0',
+      'version' => '7.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8a18c70bb1ced09baed361b68c432b0bedb74f16',
     ),
     'sebastian/cli-parser' => 
     array (
