@@ -49,7 +49,7 @@
             <div class="mt-4">
                 <x-label for="role_id" value="{{__('Register as: ') }}" />
                 <select name="role_id" id="role_id" class="block mt-1 w-full border-gray-300 focus:border-indigo-300">
-                    <option value="user">User</option>
+                    
                     <option value="administrator">Administrator</option>
                     <option value="superadministrator">Superadministrator</option>
                 </select>
