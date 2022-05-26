@@ -17,8 +17,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::group([ 'middleware' => ['auth'] ], function() {
+    Route::get('/dashboard','App\Http\Controllers\DashboardController@index')->name('dashboard');
+    Route::get('/users','App\Http\Controllers\DashboardController@users')->name('users');
+    Route::get('/vanues','App\Http\Controllers\DashboardController@venues')->name('venues');
+});
 
 require __DIR__.'/auth.php';
