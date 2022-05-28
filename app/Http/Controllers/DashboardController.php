@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Venue;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,6 +27,7 @@ class DashboardController extends Controller
     }
     
     public function venues(){
-        return view('venues');
+        $venues = Venue::all();
+        return view('venues',['venues'=>$venues]);
     }
 }
