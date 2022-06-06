@@ -12,11 +12,11 @@
                     Venues
 
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                        <div class="p-4">
+                        <div class="p-4 flex justify-between">
                             <label for="table-search" class="sr-only">Search</label>
-                            <div class="relative mt-1">
+                            <div class="relative mt-1 border">
                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <svg class="w-5 h-5 text-gray-500 " fill="currentColor" viewBox="0 0 20 20"
+                                    <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd"
                                             d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
@@ -25,10 +25,18 @@
                                 </div>
                                 <input type="text" id="table-search"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 pl-10 p-2.5  "
-                                    placeholder="Search for items">
+                                    placeholder="Search for venues">
+                                    
                             </div>
+                            <a href="{{route('new-venue')}}" class="bg-indigo-600 hover:bg-indigo-400 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 pr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                                  </svg>
+                                <span>new venue</span>
+                                </a>
                         </div>
-                        <table class="w-full text-sm text-left text-gray-500 ">
+                        @livewire('venues-list')
+                        {{-- <table class="w-full text-sm text-left text-gray-500 ">
                             <thead class="text-xs text-gray-700 uppercase bg-gray-50 ">
                                 <tr>
                                     <th scope="col" class="p-4">
@@ -89,7 +97,7 @@
                                 
                                 
                             </tbody>
-                        </table>
+                        </table> --}}
                     </div>
                 </div>
             </div>

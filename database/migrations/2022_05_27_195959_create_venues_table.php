@@ -17,13 +17,15 @@ class CreateVenuesTable extends Migration
             $table->id('id');
             $table->string('name', 30)->nullable();
             $table->string('email')->nullable();
-            $table->string('logo')->nullable();
-            $table->integer('ban_status')->default(0);// 0 = not blocked / 1 = blocked
+            $table->string('description')->nullable();
             $table->string('address', 30)->nullable();
-            $table->integer('phone')->nullable();
-            $table->decimal('longitude', 11,7);
-            $table->decimal('latitude', 11,7);
+            $table->string('phone')->nullable();
+            $table->string('logo')->nullable();
+            $table->integer('ban_status')->default(0); // 0 = not blocked / 1 = blocked
+            $table->decimal('longitude', 11,7)->default(0);
+            $table->decimal('latitude', 11,7)->default(0);
             $table->bigInteger('likes')->default(0);
+            $table->bigInteger('rating')->default(0);
             $table->unsignedBigInteger('venue_category_id')->nullable();;
             $table->timestamps();
         });

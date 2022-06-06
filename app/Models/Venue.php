@@ -12,25 +12,25 @@ class Venue extends Model
 
     protected $fillable=[
         'name',
+        'email',
+        'description',
         'address',
-        'venue_category_id',
+        'phone',
+        'logo',
+        'ban_status',
         'longitude',
         'latitude',
         'likes',
-        'logo',
-        'ban_status'
+        'rating',
+        'venue_category_id',
     ];
 
     protected $hidden=[
         'id',
     ];
 
-    protected $appends = ['hashid'];
 
-    public function getHashidAttribute()
-    {
-        return Hashids::encodeHex($this->attributes['id']);
-    }
+
 
     public function users()
     {

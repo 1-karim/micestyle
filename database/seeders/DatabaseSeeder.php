@@ -23,12 +23,17 @@ class DatabaseSeeder extends Seeder
         VenueCategorie::create(['title'=> 'co-working space' ]);
         VenueCategorie::create(['title'=> 'celebration' ]);
         for($i=0;$i<10;$i++){
+            $name = 'Test Hotel '.$i;
             Venue::create([
-            'name'=>'Test Hotel ',
-            'address' => '1 Rue de l\'adresse',
+            'name'=>$name,
+            'email' => 'plaza'.$i.'@mail.com',
+            'description'=> 1,
             'venue_category_id' => 1,
             'longitude'=>0,
+            'description'=>'Sample description'.$i,
+            'address' => $i.' Rue de l\'adresse',
             'latitude'=>0,
+            'phone'=>'22 000 000',
             'likes'=>0,
             'logo'=>'']);
         }

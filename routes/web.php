@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::group([ 'middleware' => ['auth'] ], function() {
     Route::get('/dashboard','App\Http\Controllers\DashboardController@index')->name('dashboard');
     Route::get('/users','App\Http\Controllers\DashboardController@users')->name('users');
-    Route::get('/vanues','App\Http\Controllers\DashboardController@venues')->name('venues');
+    Route::get('/venues','App\Http\Controllers\DashboardController@venues')->name('venues');
+    Route::get('/venues/add','App\Http\Controllers\DashboardController@newVenue')->name('new-venue');
 });
 
 require __DIR__.'/auth.php';

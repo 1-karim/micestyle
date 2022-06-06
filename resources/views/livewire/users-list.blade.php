@@ -282,15 +282,15 @@ x-on:keydown.escape="showModal = false">
                                                 }}</span>
                                             @enderror
                                         </div>
-                                    </div>
+                                    </div>l
 
                                     {{-- EMAIL --}}
                                     <div class="w-full lg:w-1/2 flex-col px-3 pb-5">
                                         {{-- LABEL --}}
                                         <div class="w-full  flex">
                                             <div class="w-1/3 font-semibold text-gray-500 text-xs h-5 capitalize pl-1 ">
-                                                Email</div>
-
+                                                Email
+                                            </div>
                                         </div>
                                         {{-- INPUT --}}
                                         <div class="w-full flex flex-col">

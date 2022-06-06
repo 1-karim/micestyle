@@ -21,7 +21,7 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+            {{-- @include('layouts.navigation') --}}
 
             <!-- Page Headin -->
             <header class="bg-white shadow">
@@ -31,9 +31,13 @@
             </header>
 
             <!-- Page Content -->
-            <main>
+        <div class="max-w-screen flex flex-grow flex-row bg-gray-100">
+            @livewire('sidenav')
+            <main class="border  w-full ">
                 {{ $slot }}
             </main>
+        </div>
+            
         </div>
         
         <livewire:scripts/>
