@@ -6,6 +6,6 @@
     </x-slot>
 
     <div class="py-12">
-        @livewire('venues-add')
+        @livewire('venues-form')
     </div>
 </x-app-layout>

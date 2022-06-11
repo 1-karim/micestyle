@@ -60,5 +60,7 @@ class VenuesAdd extends Component
             $this->openModal = false;
         }
         $this->editForm = false;
+
+        
     }
 }
